@@ -16,4 +16,55 @@ Utilizzare https://www.drawio.com/ per la creazione dello schema.
 Esportare quindi il diagramma in png, caricarlo in un file html e pushare tutto nella repo.
 
 
-Confermate lettura come al solito e buon divertimento 
+# Tabelle
+Dipartimenti
+Corso di Laurea
+Corsi
+Insegnanti
+Appelli Esame
+Studenti
+
+# Tabella: Dipartimenti
+ID - INT, Primary Key, Auto Increment, unique, not null
+nome - VarChar(50), not null
+Indirizzo - VarChar(200) null
+email - VarChar(100) null
+telefono - Char(12) not null
+descrizione - Text null
+
+# Tabella: Corsi di Laurea
+ID - INT, Auto Increment, unique, not null
+dipartimento_ID - INT, unique, not null
+nome - VarChar(100), not Null
+descrizione - Text null
+
+# Tabella: Studenti
+ID - INT, Primary Key, Auto Incremenet, unique, not null
+nome - VarChar(50), not null
+cognome - VarChar(50), not null
+matricola - VarChar(20), unique, not null
+data di nascita - date, not null
+email - VarChar(100) null
+telefono - Char(12) null
+
+# Tabella: Insegnanti
+ID - INT, Primary Key, Auto Incremenet, unique, not null
+nome - VarChar(50), not null
+cognome - VarChar(50), not null
+email - VarChar(100) not null
+
+# Tabella: Corsi
+ID - INT, Primary Key, Auto Incremenet, unique, not null
+corso_di_laurea_ID - INT, unique, not null
+nome - VarChar(100), not null
+periodo - VarChar(50), not null 
+cfu - TinyInt, not null
+
+# Tabella: Appelli Esame
+ID - INT, Primary Key, Auto Incremenet, unique, not null
+corso_ID - INT, unique, not null
+data - date, not null
+aula - VarChar(20) not null
+
+## Ponti
+
