@@ -68,3 +68,12 @@ aula - VarChar(20) not null
 
 ## Ponti
 
+# Tabella: corso_insegnate
+corso_ID
+insegnante_ID
+
+# Tabella: voti_esami
+appello_ID
+studente_ID
+voto - tinyInt
+stato - VarChar(20)
