@@ -1,6 +1,6 @@
 # 1
 SELECT * FROM students
-WHERE date_of_birth BETWEEN '1990-01-01' AND '1990-12-31';
+WHERE YEAR(date_of_birth) = 1990;
   
 # 2
 SELECT * FROM courses
@@ -20,7 +20,7 @@ WHERE date = '2020-06-20' and hour >= '14:00';
 
 # 6 
 SELECT * FROM degrees
-WHERE level = 'Magistrale';
+WHERE level = 'magistrale';
 
 # 7
 SELECT COUNT(*) FROM departments;
