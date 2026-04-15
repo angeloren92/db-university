@@ -18,15 +18,13 @@ WHERE period = 'I semestre' AND year = 1;
 SELECT * FROM exams
 WHERE date = '2020-06-20' and hour >= '14:00';
 
-
-
-
-
-
- # 7
+# 6 
 SELECT * FROM degrees
 WHERE level = 'Magistrale';
 
+# 7
+SELECT COUNT(*) FROM departments;
+
 # 8
-SELECT * FROM teachers
+SELECT COUNT(*) FROM teachers
 WHERE phone IS NULL;
