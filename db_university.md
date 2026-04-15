@@ -9,7 +9,7 @@ WHERE cfu > 10;
 
 # 3
 SELECT * FROM students
-WHERE date_of_birth <= '1995-04-15';
+WHERE date_of_birth <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
 
 # 4
 SELECT * FROM courses
