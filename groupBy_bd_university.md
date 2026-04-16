@@ -7,3 +7,8 @@ GROUP BY YEAR(enrolment_date);
 SELECT teachers.office_address, count(*)
 FROM teachers
 GROUP BY teachers.office_address
+
+## 3
+SELECT count(*) AS id_appelli, ROUND(AVG(exam_student.vote), 2) AS media_voti
+FROM exam_student
+GROUP BY exam_student.exam_id
