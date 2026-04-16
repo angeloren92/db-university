@@ -54,3 +54,4 @@ FROM students
 JOIN exam_student ON students.id = exam_student.student_id
 WHERE exam_student.vote >= 18
 GROUP BY students.id;
+
